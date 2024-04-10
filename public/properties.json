@@ -1,0 +1,305 @@
+[
+    {
+        "propertyImages": [
+            "https://example.com/penthouse1.jpg",
+            "https://example.com/penthouse1-interior.jpg"
+        ],
+        "estateTitle": "Luxury Penthouse with Panoramic Views",
+        "id": "PH001",
+        "segmentName": "Penthouse",
+        "description": "Exquisite penthouse offering breathtaking views of Dubai's skyline. Featuring high-end finishes and amenities.",
+        "price": 15000000,
+        "status": "sale",
+        "area": 5000,
+        "location": "Dubai, UAE",
+        "facilities": [
+            "Private Terrace",
+            "Home Theater",
+            "Fitness Center"
+        ],
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "livingRooms": 2,
+        "views": ["City Skyline", "Burj Khalifa"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/penthouse2.jpg",
+            "https://example.com/penthouse2-interior.jpg"
+        ],
+        "estateTitle": "Penthouse Suite at Iconic Marina Residence",
+        "id": "PH002",
+        "segmentName": "Penthouse",
+        "description": "Stunning penthouse with panoramic marina views and top-of-the-line amenities in the heart of Dubai.",
+        "price": 12000000,
+        "status": "sale",
+        "area": 4500,
+        "location": "Dubai, UAE",
+        "facilities": [
+            "Rooftop Pool",
+            "Home Theater",
+            "Fitness Center"
+        ],
+        "bedrooms": 5,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "livingRooms": 1,
+        "views": ["Marina", "Palm Jumeirah"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/beachfront1.jpg",
+            "https://example.com/beachfront1-interior.jpg"
+        ],
+        "estateTitle": "Beachfront Mansion with Private Beach Access",
+        "id": "BF001",
+        "segmentName": "Beachfront Property",
+        "description": "Luxurious beachfront mansion with direct access to a pristine private beach, offering ultimate privacy and exclusivity.",
+        "price": 25000000,
+        "status": "sale",
+        "area": 10000,
+        "location": "Miami, Florida, USA",
+        "facilities": [
+            "Private Beach",
+            "Home Theater",
+            "Infinity Pool",
+            "Tennis Court"
+        ],
+        "bedrooms": 8,
+        "bathrooms": 5,
+        "kitchen": 2,
+        "livingRooms": 3,
+        "views": ["Ocean", "Beach"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/beachfront2.jpg",
+            "https://example.com/beachfront2-interior.jpg"
+        ],
+        "estateTitle": "Oceanfront Villa with Breathtaking Views",
+        "id": "BF002",
+        "segmentName": "Beachfront Property",
+        "description": "Stunning oceanfront villa offering panoramic views of the Pacific Ocean, with direct beach access and luxurious amenities.",
+        "price": 18000000,
+        "status": "sale",
+        "area": 7500,
+        "location": "Los Angeles, California, USA",
+        "facilities": [
+            "Private Beach",
+            "Home Theater",
+            "Infinity Pool",
+            "Spa"
+        ],
+        "bedrooms": 6,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "livingRooms": 2,
+        "views": ["Ocean", "Beach"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/resort1.jpg",
+            "https://example.com/resort1-interior.jpg"
+        ],
+        "estateTitle": "Luxury Resort with Private Villas",
+        "id": "RS001",
+        "segmentName": "Resort",
+        "description": "Exclusive resort featuring private villas with personalized butler service and world-class amenities.",
+        "price": 5000000,
+        "status": "sale",
+        "area": 2500,
+        "location": "Singapore",
+        "facilities": [
+            "Private Pool",
+            "Spa",
+            "Golf Course",
+            "Water Sports"
+        ],
+        "bedrooms": 4,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "livingRooms": 1,
+        "views": ["Ocean", "Garden"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/resort2.jpg",
+            "https://example.com/resort2-interior.jpg"
+        ],
+        "estateTitle": "Tropical Paradise Resort",
+        "id": "RS002",
+        "segmentName": "Resort",
+        "description": "Luxurious resort nestled in a tropical paradise, offering overwater villas and world-class amenities.",
+        "price": 3500000,
+        "status": "sale",
+        "area": 1800,
+        "location": "Singapore",
+        "facilities": [
+            "Private Pool",
+            "Spa",
+            "Beach Access",
+            "Water Sports"
+        ],
+        "bedrooms": 3,
+        "bathrooms": 3,
+        "kitchen": 1,
+        "livingRooms": 1,
+        "views": ["Ocean", "Beach"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/island1.jpg",
+            "https://example.com/island1-interior.jpg"
+        ],
+        "estateTitle": "Private Island Retreat",
+        "id": "PI001",
+        "segmentName": "Private Island",
+        "description": "Exclusive private island offering ultimate seclusion and luxury, with pristine beaches and world-class amenities.",
+        "price": 80000000,
+        "status": "sale",
+        "area": 25000,
+        "location": "Dubai, UAE",
+        "facilities": [
+            "Private Beach",
+            "Spa",
+            "Yacht Marina",
+            "Water Sports",
+            "Helipad"
+        ],
+        "bedrooms": 12,
+        "bathrooms": 8,
+        "kitchen": 2,
+        "livingRooms": 5,
+        "views": ["Ocean", "Beach"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/island2.jpg",
+            "https://example.com/island2-interior.jpg"
+        ],
+        "estateTitle": "Secluded Island Paradise",
+        "id": "PI002",
+        "segmentName": "Private Island",
+        "description": "Pristine private island offering unparalleled luxury and seclusion, with world-class amenities and stunning natural beauty.",
+        "price": 65000000,
+        "status": "sale",
+        "area": 20000,
+        "location": "Miami, Florida, USA",
+        "facilities": [
+            "Private Beach",
+            "Spa",
+            "Yacht Marina",
+            "Water Sports",
+            "Helipad"
+        ],
+        "bedrooms": 10,
+        "bathrooms": 6,
+        "kitchen": 2,
+        "livingRooms": 4,
+        "views": ["Ocean", "Beach"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/villa1.jpg",
+            "https://example.com/villa1-interior.jpg"
+        ],
+        "estateTitle": "Luxury Beachfront Villa",
+        "id": "VI001",
+        "segmentName": "Villa",
+        "description": "Stunning beachfront villa offering luxury living and direct access to a pristine private beach.",
+        "price": 12000000,
+        "status": "sale",
+        "area": 6000,
+        "location": "Miami, Florida, USA",
+        "facilities": [
+            "Private Beach",
+            "Infinity Pool",
+            "Tennis Court",
+            "Spa"
+        ],
+        "bedrooms": 6,
+        "bathrooms": 5,
+        "kitchen": 1,
+        "livingRooms": 3,
+        "views": ["Ocean", "Beach"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/villa2.jpg",
+            "https://example.com/villa2-interior.jpg"
+        ],
+        "estateTitle": "Luxurious Hillside Villa with Panoramic Views",
+        "id": "VI002",
+        "segmentName": "Villa",
+        "description": "Luxurious hillside villa with breathtaking panoramic views, offering privacy and high-end amenities.",
+        "price": 9000000,
+        "status": "sale",
+        "area": 5000,
+        "location": "Los Angeles, California, USA",
+        "facilities": [
+            "Infinity Pool",
+            "Home Theater",
+            "Spa",
+            "Vineyard",
+            "Tennis Court"
+        ],
+        "bedrooms": 5,
+        "bathrooms": 4,
+        "kitchen": 1,
+        "livingRooms": 2,
+        "views": ["Mountain", "City"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/mansion1.jpg",
+            "https://example.com/mansion1-interior.jpg"
+        ],
+        "estateTitle": "Grand Mansion with Luxury Amenities",
+        "id": "MN001",
+        "segmentName": "Mansion",
+        "description": "Magnificent mansion offering luxurious living with top-of-the-line amenities and impeccable finishes.",
+        "price": 35000000,
+        "status": "sale",
+        "area": 15000,
+        "location": "Miami, Florida, USA",
+        "facilities": [
+            "Home Theater",
+            "Indoor Pool",
+            "Spa",
+            "Tennis Court",
+            "Bowling Alley"
+        ],
+        "bedrooms": 10,
+        "bathrooms": 8,
+        "kitchen": 2,
+        "livingRooms": 5,
+        "views": ["Garden", "City"]
+    },
+    {
+        "propertyImages": [
+            "https://example.com/mansion2.jpg",
+            "https://example.com/mansion2-interior.jpg"
+        ],
+        "estateTitle": "Opulent Mansion with Manicured Grounds",
+        "id": "MN002",
+        "segmentName": "Mansion",
+        "description": "Opulent mansion with meticulously manicured grounds, offering luxury living and top-of-the-line amenities.",
+        "price": 28000000,
+        "status": "sale",
+        "area": 12000,
+        "location": "Los Angeles, California, USA",
+        "facilities": [
+            "Home Theater",
+            "Indoor Pool",
+            "Spa",
+            "Tennis Court",
+            "Vineyard"
+        ],
+        "bedrooms": 8,
+        "bathrooms": 6,
+        "kitchen": 2,
+        "livingRooms": 4,
+        "views": ["Garden", "Mountain"]
+    }
+]
