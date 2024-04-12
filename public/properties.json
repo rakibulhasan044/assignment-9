@@ -1,8 +1,11 @@
 [
     {
         "propertyImages": [
-            "https://example.com/penthouse1.jpg",
-            "https://example.com/penthouse1-interior.jpg"
+            "https://i.postimg.cc/8z0kBfY8/one2.webp",
+             "https://i.postimg.cc/9FxcCqC4/one3.webp",
+             "https://i.postimg.cc/448DPdnZ/one4.webp",
+             "https://i.postimg.cc/SQ5ZjzJX/one5.webp",
+             "https://i.postimg.cc/JzgJ5bCJ/one6.webp"
         ],
         "estateTitle": "Luxury Penthouse with Panoramic Views",
         "id": "PH001",
@@ -25,8 +28,13 @@
     },
     {
         "propertyImages": [
-            "https://example.com/penthouse2.jpg",
-            "https://example.com/penthouse2-interior.jpg"
+            "https://i.postimg.cc/P5VP5CMy/two1.webp",
+            "https://i.postimg.cc/1zz7DjwP/two2.webp",
+            "https://i.postimg.cc/RF6PDJgD/two3.webp",
+            "https://i.postimg.cc/tJfnm7m2/two4.webp",
+            "https://i.postimg.cc/qvmqmNhn/two5.webp",
+            "https://i.postimg.cc/tJtCFJGs/two6.webp",
+            "https://i.postimg.cc/1XPyRSVs/two7.webp"
         ],
         "estateTitle": "Penthouse Suite at Iconic Marina Residence",
         "id": "PH002",
@@ -49,8 +57,12 @@
     },
     {
         "propertyImages": [
-            "https://example.com/beachfront1.jpg",
-            "https://example.com/beachfront1-interior.jpg"
+            "https://i.postimg.cc/nh1RNJpq/three1.webp",
+            "https://i.postimg.cc/Z5yYLwmk/three2.webp",
+            "https://i.postimg.cc/s2YVk11w/three3.webp",
+            "https://i.postimg.cc/cH1NPmpL/three4.webp",
+            "https://i.postimg.cc/pLdcNST7/three5.webp",
+            "https://i.postimg.cc/Pf4MtMBk/three6.webp"
         ],
         "estateTitle": "Beachfront Mansion with Private Beach Access",
         "id": "BF001",
@@ -74,8 +86,11 @@
     },
     {
         "propertyImages": [
-            "https://example.com/beachfront2.jpg",
-            "https://example.com/beachfront2-interior.jpg"
+            "https://i.postimg.cc/tJCW1LLG/four1.avif",
+            "https://i.postimg.cc/KjxSt5N2/four2.webp",
+            "https://i.postimg.cc/vmxsyTBp/four3.avif",
+            "https://i.postimg.cc/JnwWz8Ht/four4.avif",
+            "https://i.postimg.cc/d18c7fG6/four5.jpg"
         ],
         "estateTitle": "Oceanfront Villa with Breathtaking Views",
         "id": "BF002",
@@ -99,8 +114,11 @@
     },
     {
         "propertyImages": [
-            "https://example.com/resort1.jpg",
-            "https://example.com/resort1-interior.jpg"
+            "https://i.postimg.cc/t4wJQYyx/five1.webp",
+            "https://i.postimg.cc/h4NKtN6k/five2.webp",
+            "https://i.postimg.cc/Y2WJb0DP/five4.webp",
+            "https://i.postimg.cc/d18c7fG6/four5.jpg",
+            "https://i.postimg.cc/Pf4MtMBk/three6.webp"
         ],
         "estateTitle": "Luxury Resort with Private Villas",
         "id": "RS001",
