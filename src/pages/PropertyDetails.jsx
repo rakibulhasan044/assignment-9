@@ -6,7 +6,6 @@ const PropertyDetails = () => {
     console.log(id)
 
     const property = properties.find(p => p.id === id);
-    console.log(property);
     return (
         <div>
             <h3>here:{id}</h3>

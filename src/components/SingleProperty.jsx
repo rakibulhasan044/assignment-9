@@ -7,7 +7,7 @@ import { FaLocationDot } from "react-icons/fa6";
 import { BsCurrencyDollar } from "react-icons/bs";
 import { Link } from 'react-router-dom'
 const SingleProperty = ({ properties }) => {
-    const { propertyImages, estateTitle, id, segmentName, description, price, status, area, location, facilities} = properties;
+    const { propertyImages, estateTitle, id, segmentName, description, price, status, location} = properties;
   return (
     <div className="card bg-base-100 shadow-xl">
       {/* <figure>
@@ -32,15 +32,14 @@ const SingleProperty = ({ properties }) => {
           <p>Property Type: {segmentName}</p>
           <p>For {status}</p>
           <div className='flex justify-between items-center'>
-            <div className='flex gap-2 items-center'>
-              <BsCurrencyDollar></BsCurrencyDollar>
+            <div className='flex items-center font-bold'>
               <p>price: {price}</p>
+              <BsCurrencyDollar></BsCurrencyDollar>
             </div>
             <div className='flex gap-3 items-center'>
               <FaLocationDot/>
-              <p>Location: {location}</p>
+              <p>{location}</p>
             </div>
-            
           </div>
         </div>
         <p>{description.slice(0,100)}</p>
