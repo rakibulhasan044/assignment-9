@@ -2,15 +2,15 @@
     {
         "propertyImages": [
             "https://i.postimg.cc/8z0kBfY8/one2.webp",
-             "https://i.postimg.cc/9FxcCqC4/one3.webp",
-             "https://i.postimg.cc/448DPdnZ/one4.webp",
-             "https://i.postimg.cc/SQ5ZjzJX/one5.webp",
-             "https://i.postimg.cc/JzgJ5bCJ/one6.webp"
+            "https://i.postimg.cc/9FxcCqC4/one3.webp",
+            "https://i.postimg.cc/448DPdnZ/one4.webp",
+            "https://i.postimg.cc/SQ5ZjzJX/one5.webp",
+            "https://i.postimg.cc/JzgJ5bCJ/one6.webp"
         ],
         "estateTitle": "Luxury Penthouse with Panoramic Views",
         "id": "PH001",
         "segmentName": "Penthouse",
-        "description": "Exquisite penthouse offering breathtaking views of Dubai's skyline. Featuring high-end finishes and amenities.",
+        "description": "Experience unparalleled luxury in this exquisite penthouse offering breathtaking views of Dubai's iconic skyline. Boasting high-end finishes and amenities, this penthouse features spacious living areas designed for modern living. Indulge in the ultimate comfort with a private terrace, perfect for entertaining guests or enjoying quiet evenings with family. The home theater provides an immersive entertainment experience, while the fitness center ensures you stay active and healthy without leaving the comfort of your home. With four bedrooms and baths, a well-appointed kitchen, and two luxurious living rooms, this penthouse is a testament to refined living at its finest.",
         "price": 15000000,
         "status": "sale",
         "area": 5000,
@@ -21,7 +21,7 @@
             "Fitness Center"
         ],
         "bedrooms": 4,
-        "bathrooms": 4,
+        "baths": 4,
         "kitchen": 1,
         "livingRooms": 2,
         "views": ["City Skyline", "Burj Khalifa"]
@@ -39,7 +39,7 @@
         "estateTitle": "Penthouse Suite at Iconic Marina Residence",
         "id": "PH002",
         "segmentName": "Penthouse",
-        "description": "Stunning penthouse with panoramic marina views and top-of-the-line amenities in the heart of Dubai.",
+        "description": "Discover the epitome of luxury living in this stunning penthouse boasting panoramic views of Dubai's vibrant marina. Situated in the heart of the city, this penthouse offers unrivaled sophistication and comfort. Enjoy the rooftop pool with sweeping views of the marina, ideal for relaxation and entertainment. The home theater provides the perfect setting for movie nights, while the fitness center ensures you maintain an active lifestyle. With five bedrooms and baths, a gourmet kitchen, and a spacious living room, this penthouse is designed to elevate your lifestyle to new heights.",
         "price": 12000000,
         "status": "sale",
         "area": 4500,
@@ -50,7 +50,7 @@
             "Fitness Center"
         ],
         "bedrooms": 5,
-        "bathrooms": 3,
+        "baths": 3,
         "kitchen": 1,
         "livingRooms": 1,
         "views": ["Marina", "Palm Jumeirah"]
@@ -67,7 +67,7 @@
         "estateTitle": "Beachfront Mansion with Private Beach Access",
         "id": "BF001",
         "segmentName": "Beachfront Property",
-        "description": "Luxurious beachfront mansion with direct access to a pristine private beach, offering ultimate privacy and exclusivity.",
+        "description": "Experience the epitome of coastal luxury in this magnificent beachfront mansion offering direct access to a pristine private beach. Nestled in Miami's exclusive coastline, this estate provides ultimate privacy and exclusivity. Indulge in leisure with a private beach, home theater, infinity pool, and tennis court. With eight bedrooms, five baths, two kitchens, and three living rooms, this mansion is designed for luxurious seaside living.",
         "price": 25000000,
         "status": "sale",
         "area": 10000,
@@ -79,7 +79,7 @@
             "Tennis Court"
         ],
         "bedrooms": 8,
-        "bathrooms": 5,
+        "baths": 5,
         "kitchen": 2,
         "livingRooms": 3,
         "views": ["Ocean", "Beach"]
@@ -95,9 +95,9 @@
         "estateTitle": "Oceanfront Villa with Breathtaking Views",
         "id": "BF002",
         "segmentName": "Beachfront Property",
-        "description": "Stunning oceanfront villa offering panoramic views of the Pacific Ocean, with direct beach access and luxurious amenities.",
+        "description": "Indulge in coastal living at its finest in this stunning oceanfront villa offering panoramic views of the Pacific Ocean. Located in Los Angeles, California, this villa provides direct beach access and luxurious amenities for a truly lavish lifestyle. With six bedrooms, four baths, a gourmet kitchen, and two living rooms, this villa is perfect for those seeking unparalleled oceanfront living.",
         "price": 18000000,
-        "status": "sale",
+        "status": "rent",
         "area": 7500,
         "location": "Los Angeles, California, USA",
         "facilities": [
@@ -107,7 +107,7 @@
             "Spa"
         ],
         "bedrooms": 6,
-        "bathrooms": 4,
+        "baths": 4,
         "kitchen": 1,
         "livingRooms": 2,
         "views": ["Ocean", "Beach"]
@@ -123,7 +123,7 @@
         "estateTitle": "Luxury Resort with Private Villas",
         "id": "RS001",
         "segmentName": "Resort",
-        "description": "Exclusive resort featuring private villas with personalized butler service and world-class amenities.",
+        "description": "Escape to an exclusive paradise in this luxurious resort featuring private villas with personalized butler service and world-class amenities. Located in Singapore, this resort offers unparalleled ocean and garden views, ensuring a serene and tranquil stay. With four bedrooms, four baths, a gourmet kitchen, and a spacious living room, each villa provides the utmost comfort and privacy for a truly unforgettable experience.",
         "price": 5000000,
         "status": "sale",
         "area": 2500,
@@ -135,7 +135,7 @@
             "Water Sports"
         ],
         "bedrooms": 4,
-        "bathrooms": 4,
+        "baths": 4,
         "kitchen": 1,
         "livingRooms": 1,
         "views": ["Ocean", "Garden"]
@@ -151,7 +151,7 @@
         "estateTitle": "Tropical Paradise Resort",
         "id": "RS002",
         "segmentName": "Resort",
-        "description": "Luxurious resort nestled in a tropical paradise, offering overwater villas and world-class amenities.",
+        "description": "Experience paradise in this luxurious resort nestled in a tropical oasis, offering overwater villas and world-class amenities. Located in Singapore, this resort boasts breathtaking ocean and beach views, ensuring an unforgettable stay. With three bedrooms, three baths, a gourmet kitchen, and a spacious living room, each villa provides the perfect blend of luxury and tranquility for an unparalleled tropical getaway.",
         "price": 3500000,
         "status": "sale",
         "area": 1800,
@@ -163,7 +163,7 @@
             "Water Sports"
         ],
         "bedrooms": 3,
-        "bathrooms": 3,
+        "baths": 3,
         "kitchen": 1,
         "livingRooms": 1,
         "views": ["Ocean", "Beach"]
@@ -179,7 +179,7 @@
         "estateTitle": "Private Island Retreat",
         "id": "PI001",
         "segmentName": "Private Island",
-        "description": "Exclusive private island offering ultimate seclusion and luxury, with pristine beaches and world-class amenities.",
+        "description": "Discover ultimate seclusion and luxury in this exclusive private island offering pristine beaches and world-class amenities. Located in Dubai, UAE, this private island features breathtaking ocean and beach views, ensuring an unparalleled escape from the ordinary. With twelve bedrooms, eight baths, two kitchens, and five living rooms, this private island retreat is the epitome of opulence and privacy.",
         "price": 80000000,
         "status": "sale",
         "area": 25000,
@@ -192,7 +192,7 @@
             "Helipad"
         ],
         "bedrooms": 12,
-        "bathrooms": 8,
+        "baths": 8,
         "kitchen": 2,
         "livingRooms": 5,
         "views": ["Ocean", "Beach"]
@@ -208,9 +208,9 @@
         "estateTitle": "Secluded Island Paradise",
         "id": "PI002",
         "segmentName": "Private Island",
-        "description": "Pristine private island offering unparalleled luxury and seclusion, with world-class amenities and stunning natural beauty.",
+        "description": "Escape to a pristine private island offering unparalleled luxury and seclusion, surrounded by stunning natural beauty. Located in Miami, Florida, USA, this secluded island paradise offers breathtaking ocean and beach views, ensuring a truly unforgettable retreat. With ten bedrooms, six baths, two kitchens, and four living rooms, this private island sanctuary is the ultimate destination for those seeking tranquility and luxury.",
         "price": 65000000,
-        "status": "sale",
+        "status": "rent",
         "area": 20000,
         "location": "Miami, Florida, USA",
         "facilities": [
@@ -221,7 +221,7 @@
             "Helipad"
         ],
         "bedrooms": 10,
-        "bathrooms": 6,
+        "baths": 6,
         "kitchen": 2,
         "livingRooms": 4,
         "views": ["Ocean", "Beach"]
@@ -237,7 +237,7 @@
         "estateTitle": "Luxury Beachfront Villa",
         "id": "VI001",
         "segmentName": "Villa",
-        "description": "Stunning beachfront villa offering luxury living and direct access to a pristine private beach.",
+        "description": "Experience luxury beachfront living in this stunning villa offering direct access to a pristine private beach. Located in Miami, Florida, USA, this beachfront villa boasts breathtaking ocean and beach views, ensuring a serene and tranquil lifestyle. With six bedrooms, five baths, a gourmet kitchen, and three living rooms, this villa is the epitome of coastal elegance and sophistication.",
         "price": 12000000,
         "status": "sale",
         "area": 6000,
@@ -249,7 +249,7 @@
             "Spa"
         ],
         "bedrooms": 6,
-        "bathrooms": 5,
+        "baths": 5,
         "kitchen": 1,
         "livingRooms": 3,
         "views": ["Ocean", "Beach"]
@@ -265,9 +265,9 @@
         "estateTitle": "Luxurious Hillside Villa with Panoramic Views",
         "id": "VI002",
         "segmentName": "Villa",
-        "description": "Luxurious hillside villa with breathtaking panoramic views, offering privacy and high-end amenities.",
+        "description": "Indulge in luxury living in this hillside villa boasting breathtaking panoramic views of the mountains and city skyline. Located in Los Angeles, California, USA, this villa offers privacy and tranquility amidst stunning natural surroundings. With five bedrooms, four baths, a gourmet kitchen, and two living rooms, this villa is designed for those seeking the perfect blend of elegance and sophistication.",
         "price": 9000000,
-        "status": "sale",
+        "status": "rent",
         "area": 5000,
         "location": "Los Angeles, California, USA",
         "facilities": [
@@ -278,7 +278,7 @@
             "Tennis Court"
         ],
         "bedrooms": 5,
-        "bathrooms": 4,
+        "baths": 4,
         "kitchen": 1,
         "livingRooms": 2,
         "views": ["Mountain", "City"]
@@ -294,9 +294,9 @@
         "estateTitle": "Grand Mansion with Luxury Amenities",
         "id": "MN001",
         "segmentName": "Mansion",
-        "description": "Magnificent mansion offering luxurious living with top-of-the-line amenities and impeccable finishes.",
+        "description": "Experience grandeur and opulence in this magnificent mansion offering luxurious living with top-of-the-line amenities and impeccable finishes. Located in Miami, Florida, USA, this mansion boasts meticulously manicured grounds and breathtaking garden and city views. With ten bedrooms, eight baths, two kitchens, and five living rooms, this mansion is perfect for those seeking the epitome of luxury living.",
         "price": 35000000,
-        "status": "sale",
+        "status": "rent",
         "area": 15000,
         "location": "Miami, Florida, USA",
         "facilities": [
@@ -307,7 +307,7 @@
             "Bowling Alley"
         ],
         "bedrooms": 10,
-        "bathrooms": 8,
+        "baths": 8,
         "kitchen": 2,
         "livingRooms": 5,
         "views": ["Garden", "City"]
@@ -323,7 +323,7 @@
         "estateTitle": "Opulent Mansion with Manicured Grounds",
         "id": "MN002",
         "segmentName": "Mansion",
-        "description": "Opulent mansion with meticulously manicured grounds, offering luxury living and top-of-the-line amenities.",
+        "description": "Experience luxury living in this opulent mansion with meticulously manicured grounds, offering privacy and tranquility amidst stunning garden and mountain views. Located in Los Angeles, California, USA, this mansion boasts top-of-the-line amenities and impeccable craftsmanship. With eight bedrooms, six baths, two kitchens, and four living rooms, this mansion is perfect for those seeking the ultimate in elegance and sophistication.",
         "price": 28000000,
         "status": "sale",
         "area": 12000,
@@ -336,7 +336,7 @@
             "Vineyard"
         ],
         "bedrooms": 8,
-        "bathrooms": 6,
+        "baths": 6,
         "kitchen": 2,
         "livingRooms": 4,
         "views": ["Garden", "Mountain"]

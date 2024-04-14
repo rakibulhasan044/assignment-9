@@ -1,16 +1,98 @@
 import { useLoaderData, useParams } from "react-router-dom";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow } from 'swiper/modules';
+import 'swiper/css/bundle';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import { FaLocationDot } from "react-icons/fa6";
+import { FaDollarSign } from "react-icons/fa";
+
 
 const PropertyDetails = () => {
-    const properties = useLoaderData();
-    const {id} = useParams();
-    console.log(id)
+  const properties = useLoaderData();
+  const { id } = useParams();
 
-    const property = properties.find(p => p.id === id);
-    return (
-        <div>
-            <h3>here:{id}</h3>
+  const property = properties.find((p) => p.id === id);
+  const {
+    propertyImages,
+    estateTitle,
+    segmentName,
+    description,
+    price,
+    status,
+    area,
+    facilities,
+    bedrooms,
+    baths,
+    kitchen,
+    livingRooms,
+    location,
+    views
+  } = property;
+  return (
+    <div className="card bg-base-100 shadow-xl mt-5 animate__animated animate__backInLeft">
+      <figure className="max-h-[600px] p-4">
+        <Swiper 
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow]}
+        spaceBetween={30} 
+        autoplay={{delay: 3000}}
+        effect="coverflow"
+        slidesPerView={1} 
+        navigation
+        pagination = {{ clickable: true }}
+        scrollbar = {{ draggable: true }}
+        >
+          {propertyImages.map((imageUrl, index) => (
+            <SwiperSlide key={index}>
+              <img className="w-full" src={imageUrl} />
+            </SwiperSlide>
+          ))}
+        </Swiper>
+      </figure>
+      <div className="card-body">
+        <h2 className="card-title">{estateTitle}</h2>
+        <div className="flex gap-14 text-gray-500">
+          <div className="flex items-center font-bold">
+          <FaDollarSign/>
+            <p>{price}</p>
+          </div>
+          <div className="flex items-center font-bold gap-1">
+            <FaLocationDot/>
+            <p>Location: {location}</p>
+          </div>
         </div>
-    );
+        <p className="text-gray-500 font-semibold">Property type: {segmentName}</p>
+        <div className="flex text-gray-500 gap-10 md:gap-36 font-bold">
+            <div>For {status}</div>
+            <div>Area: {area}</div>
+        </div>
+        <div className="grid grid-cols-2 md:grid-cols-4 md:w-3/4 lg:w-3/5 text-gray-500 font-semibold space-y-2">
+            <p>Bedrooms: {bedrooms}</p>
+            <p>Baths: {baths}</p>
+            <p>Kitchen: {kitchen}</p>
+            <p>Livingrooms: {livingRooms}</p>
+        </div>
+        <div>
+            <p className="text-gray-500">Facilities:</p>
+            <ul className="flex gap-2 md:gap-10 flex-col md:flex-row list-disc list-inside text-gray-500">
+            {
+                facilities.map((p, index) => <li key={index}>{p}</li>)
+            }
+            </ul>
+        </div>
+        <div>
+            <p className="text-gray-500">View:</p>
+            <ul className="flex gap-2 md:gap-10 flex-col md:flex-row list-disc list-inside text-gray-500">
+            {
+                views.map((p, index) => <li key={index}>{p}</li>)
+            }
+            </ul>
+        </div>
+        <p><span className="font-bold">Description:</span> {description}</p>
+      </div>
+    </div>
+  );
 };
 
 export default PropertyDetails;
