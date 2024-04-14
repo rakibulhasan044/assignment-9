@@ -4,7 +4,7 @@ import { AuthContext } from "../providers/AuthProviders";
 
 
 const UpdateProfile = () => {
-    const {profileUpdate, emailUpdate} = useContext(AuthContext);
+    const {profileUpdate} = useContext(AuthContext);
     const handleUpdate = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -17,11 +17,11 @@ const UpdateProfile = () => {
             console.log(error.message);
         })
 
-        emailUpdate(email)
-        .then(console.log('email updated'))
-        .catch(error => {
-            console.log(error.message);
-        })
+        // emailUpdate(email)
+        // .then(console.log('email updated'))
+        // .catch(error => {
+        //     console.log(error.message);
+        // })
     }
     return (
         <div>
@@ -40,7 +40,7 @@ const UpdateProfile = () => {
               className="input input-bordered"
             />
           </div>
-          <div className="form-control">
+          {/* <div className="form-control">
             <label className="label">
               <span className="label-text">Email</span>
             </label>
@@ -50,7 +50,7 @@ const UpdateProfile = () => {
               name="email"
               className="input input-bordered"
             />
-          </div>
+          </div> */}
           <div className="form-control">
             <label className="label">
               <span className="label-text">PhotoURL</span>

@@ -3,24 +3,24 @@ import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
 
 const Navbar = () => {
-  const { user, logOut } = useContext(AuthContext);
-  console.log(user);
+  const { user, logOut, loader } = useContext(AuthContext);
+  
+  if(loader) {
+    return <div className='flex justify-center items-center'>
+        <div className="loading loading-spinner text-error w-[80px]"></div>
+    </div>
+}
 
-  const handleSignOut = () =>{
+  const handleSignOut = () => {
     logOut()
-    .then(console.log('log out hoise'))
-    .catch(error => console.log(error))
-  }
+      .then(console.log("log out hoise"))
+      .catch((error) => console.log(error));
+  };
+  
   const links = (
     <>
       <li>
         <NavLink to="/">Home</NavLink>
-      </li>
-      <li>
-        <NavLink to="/updateprofile">Update Profile</NavLink>
-      </li>
-      <li>
-        <NavLink to="/userprofile">User Profile</NavLink>
       </li>
       <li>
         <NavLink to="/login">Login</NavLink>
@@ -28,6 +28,18 @@ const Navbar = () => {
       <li>
         <NavLink to="/register">Register</NavLink>
       </li>
+      {user ? (
+        <>
+          <li>
+            <NavLink to="/updateprofile">Update Profile</NavLink>
+          </li>
+          <li>
+            <NavLink to="/userprofile">User Profile</NavLink>
+          </li>
+        </>
+      ) : (
+        ""
+      )}
     </>
   );
   return (
@@ -63,12 +75,22 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 flex gap-2">{links}</ul>
       </div>
       <div className="navbar-end">
-        {
-          user ? <a
-          onClick={handleSignOut}
-           className="btn btn-sm bg-gray-200">Log Out</a>
-          : <Link to='/login' className="btn btn-sm bg-gray-200">Login</Link>
-        }
+        {user ? (
+          <>
+            <div className="avatar mr-5">
+              <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                <img src={user.photoURL} />
+              </div>
+            </div>
+            <a onClick={handleSignOut} className="btn btn-sm bg-gray-200">
+              Log Out
+            </a>
+          </>
+        ) : (
+          <Link to="/login" className="btn btn-sm bg-gray-200">
+            Login
+          </Link>
+        )}
       </div>
     </div>
   );
