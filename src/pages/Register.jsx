@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
+import { FaEye } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa";
 const Register = () => {
 
     const {createUser} = useContext(AuthContext);
+    const [show, setShow] = useState(false);
     const handleRegister = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -62,17 +65,23 @@ const Register = () => {
             required
           />
         </div>
-        <div className="form-control">
+        <div className="form-control relative">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
           <input
-            type="password"
+            type={show? "text" : "password"}
             placeholder="password"
             name="password"
             className="input input-bordered"
             required
           />
+          <span
+              className="absolute top-[52px] right-[10%]"
+              onClick={() => setShow(!show)}
+            >
+              {show ? <FaEye /> : <FaEyeSlash />}
+            </span>
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">
               Forgot password?

@@ -1,9 +1,12 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
+import { FaEye } from "react-icons/fa6";
+import { FaEyeSlash } from "react-icons/fa";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
+  const [show, setShow] = useState(false)
   const location = useLocation();
   const navigate = useNavigate();
 
@@ -38,7 +41,7 @@ const Login = () => {
             required
           />
         </div>
-        <div className="form-control">
+        <div className="form-control relative">
           <label className="label">
             <span className="label-text">Password</span>
           </label>
@@ -49,6 +52,12 @@ const Login = () => {
             className="input input-bordered"
             required
           />
+          <span
+              className="absolute top-[52px] right-[10%]"
+              onClick={() => setShow(!show)}
+            >
+              {show ? <FaEye /> : <FaEyeSlash />}
+            </span>
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">
               Forgot password?
