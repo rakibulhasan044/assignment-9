@@ -3,6 +3,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
+import toast from 'react-hot-toast';
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -17,10 +18,12 @@ const Login = () => {
     signIn(email, password)
       .then(result => {
         console.log(result.user)
+        toast.success('Login Successfully')
         navigate(location?.state ? location.state : '/')
       })
       .catch((error) => {
         console.log(error.message);
+        toast.error(error.message)
       });
   };
   return (
@@ -46,7 +49,7 @@ const Login = () => {
             <span className="label-text">Password</span>
           </label>
           <input
-            type="password"
+            type={show ? "text" : "password"}
             placeholder="password"
             name="password"
             className="input input-bordered"

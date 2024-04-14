@@ -1,20 +1,22 @@
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProviders";
+import toast from 'react-hot-toast';
 
 
 
 const UpdateProfile = () => {
     const {profileUpdate} = useContext(AuthContext);
+
     const handleUpdate = (e) => {
         e.preventDefault();
         const name = e.target.name.value;
-        const email = e.target.email.value;
+        //const email = e.target.email.value;
         const photourl = e.target.photourl.value;
-        console.log(name, email, photourl);
         profileUpdate(name, photourl)
-        .then(console.log('profile updated'))
+        .then(toast.success('profile updated'))
         .catch(error => {
             console.log(error.message);
+            toast.error(error.message);
         })
 
         // emailUpdate(email)
@@ -38,6 +40,7 @@ const UpdateProfile = () => {
               placeholder="name"
               name="name"
               className="input input-bordered"
+              required
             />
           </div>
           {/* <div className="form-control">
@@ -60,13 +63,13 @@ const UpdateProfile = () => {
               placeholder="photourl"
               name="photourl"
               className="input input-bordered"
+              required
             />
           </div>
           <div className="form-control mt-6">
             <button className="btn btn-primary">Update</button>
           </div>
         </form>
-        
       </div>
     );
 };

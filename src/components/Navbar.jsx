@@ -1,20 +1,25 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
+import toast from 'react-hot-toast'
 
 const Navbar = () => {
   const { user, logOut, loader } = useContext(AuthContext);
   
-  if(loader) {
-    return <div className='flex justify-center items-center'>
-        <div className="loading loading-spinner text-error w-[80px]"></div>
-    </div>
-}
+setTimeout(() => {
+  if (loader) {
+      return (
+          <div className='flex justify-center items-center'>
+              <div className="loading loading-spinner text-error w-[80px]"></div>
+          </div>
+      );
+  }
+}, 3);
 
   const handleSignOut = () => {
     logOut()
-      .then(console.log("log out hoise"))
-      .catch((error) => console.log(error));
+      .then(toast.success("Successfully loged out"))
+      .catch((error) => toast.error(error.message));
   };
   
   const links = (

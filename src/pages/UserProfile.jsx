@@ -2,15 +2,8 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 
 const UserProfile = () => {
-  const { user, loader } = useContext(AuthContext);
-  if (loader) {
-    return (
-      <div className="flex justify-center items-center">
-        <div className="loading loading-spinner text-error w-[60px]"></div>
-      </div>
-    );
-  }
-
+  const { user } = useContext(AuthContext);
+  
   return (
     <div className="text-center mt-10 flex justify-center">
       <div className="bg-purple-200 md:w-2/4 p-14  md:p-28 rounded-xl">

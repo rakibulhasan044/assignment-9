@@ -3,7 +3,6 @@ import SingleProperty from './SingleProperty';
 
 const Properties = () => {
     const properties = useLoaderData();
-    console.log(properties)
     return (
         <div className=''>
             <h2 className="text-3xl font-semibold">Choose your dream home</h2>

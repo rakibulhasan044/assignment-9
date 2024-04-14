@@ -1,11 +1,14 @@
 import { useContext, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
+import toast from 'react-hot-toast'
 const Register = () => {
 
     const {createUser} = useContext(AuthContext);
+    const location = useLocation();
+    const navigate = useNavigate();
     const [show, setShow] = useState(false);
     const handleRegister = (e) => {
         e.preventDefault();
@@ -18,9 +21,11 @@ const Register = () => {
         createUser(email, password)
         .then(result => {
             console.log(result.user);
+            navigate(location?.state ? location.state : '/')
+            toast.success("SuccessFully registered")
         })
         .catch(error => {
-            console.log(error.message);
+            toast.error(error.message)
         })
 
     }
