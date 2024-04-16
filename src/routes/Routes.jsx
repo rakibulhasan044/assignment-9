@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateProfile from "../pages/UpdateProfile";
 import UserProfile from "../pages/UserProfile";
 import Errorpage from "../pages/Errorpage";
+import SingleLocationProperties from "../pages/SingleLocationProperties";
 
 const router = createBrowserRouter([
   {
@@ -53,6 +54,11 @@ const router = createBrowserRouter([
           </PrivateRoute>
         ),
       },
+      {
+        path: "/locationprop/:state",
+        element:<SingleLocationProperties/>,
+        loader: () => fetch("/properties.json"),
+      }
     ],
   },
 ]);

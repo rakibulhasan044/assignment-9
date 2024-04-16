@@ -1,11 +1,9 @@
-import PropTypes from 'prop-types'
-
-
+import PropTypes from 'prop-types';
 import { FaLocationDot } from "react-icons/fa6";
 import { BsCurrencyDollar } from "react-icons/bs";
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 const SingleProperty = ({ properties }) => {
-    const { propertyImages, estateTitle, id, segmentName, description, price, status, location} = properties;
+    const { propertyImages, estateTitle, id, segmentName, price, status, location} = properties;
   return (
     <div className="card bg-base-100 shadow-xl">
       <figure>
@@ -27,9 +25,8 @@ const SingleProperty = ({ properties }) => {
             </div>
           </div>
         </div>
-        <p>{description.slice(0,100)}</p>
         <div className="card-actions">
-          <Link to={`/propertydetails/${id}`} className="btn btn-primary">View property</Link>
+          <Link to={`/propertydetails/${id}`} className="btn btn-primary w-full">View property</Link>
         </div>
       </div>
     </div>

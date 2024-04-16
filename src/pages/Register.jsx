@@ -67,7 +67,6 @@ const Register = () => {
             placeholder="photourl"
             name="photourl"
             className="input input-bordered"
-            required
           />
         </div>
         <div className="form-control relative">

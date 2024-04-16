@@ -43,7 +43,7 @@ const PropertyDetails = () => {
         pagination = {{ clickable: true }}
         scrollbar = {{ draggable: true }}
         >
-          {propertyImages.map((imageUrl, index) => (
+          {propertyImages?.map((imageUrl, index) => (
             <SwiperSlide key={index}>
               <img className="w-full" src={imageUrl} />
             </SwiperSlide>
@@ -67,7 +67,7 @@ const PropertyDetails = () => {
             <div>For {status}</div>
             <div>Area: {area}</div>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 md:w-3/4 lg:w-3/5 text-gray-500 font-semibold space-y-2">
+        <div className="grid grid-cols-2 md:grid-cols-4 md:w-3/4 lg:w-3/5 text-gray-500 font-semibold">
             <p>Bedrooms: {bedrooms}</p>
             <p>Baths: {baths}</p>
             <p>Kitchen: {kitchen}</p>

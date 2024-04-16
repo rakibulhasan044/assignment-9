@@ -15,6 +15,7 @@
         "status": "sale",
         "area": 5000,
         "location": "Dubai, UAE",
+        "state": "Dubai",
         "facilities": [
             "Private Terrace",
             "Home Theater",
@@ -24,7 +25,8 @@
         "baths": 4,
         "kitchen": 1,
         "livingRooms": 2,
-        "views": ["City Skyline", "Burj Khalifa"]
+        "views": ["City Skyline", "Burj Khalifa"],
+        "locationImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D"
     },
     {
         "propertyImages": [
@@ -44,6 +46,7 @@
         "status": "sale",
         "area": 4500,
         "location": "Dubai, UAE",
+        "state": "Dubai",
         "facilities": [
             "Rooftop Pool",
             "Home Theater",
@@ -53,7 +56,8 @@
         "baths": 3,
         "kitchen": 1,
         "livingRooms": 1,
-        "views": ["Marina", "Palm Jumeirah"]
+        "views": ["Marina", "Palm Jumeirah"],
+        "locationImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D"
     },
     {
         "propertyImages": [
@@ -72,6 +76,7 @@
         "status": "sale",
         "area": 10000,
         "location": "Miami, Florida, USA",
+        "state": "Florida",
         "facilities": [
             "Private Beach",
             "Home Theater",
@@ -82,7 +87,8 @@
         "baths": 5,
         "kitchen": 2,
         "livingRooms": 3,
-        "views": ["Ocean", "Beach"]
+        "views": ["Ocean", "Beach"],
+        "locationImage" : "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb3JpZGElMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "propertyImages": [
@@ -100,6 +106,7 @@
         "status": "rent",
         "area": 7500,
         "location": "Los Angeles, California, USA",
+        "state": "California",
         "facilities": [
             "Private Beach",
             "Home Theater",
@@ -110,7 +117,8 @@
         "baths": 4,
         "kitchen": 1,
         "livingRooms": 2,
-        "views": ["Ocean", "Beach"]
+        "views": ["Ocean", "Beach"],
+        "locationImage" : "https://images.unsplash.com/photo-1611728337177-89dfbbdc7a3a?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9zJTIwYW5nZWxlcyUyMHNreWxpbmV8ZW58MHx8MHx8fDA%3D"
     },
     {
         "propertyImages": [
@@ -128,6 +136,7 @@
         "status": "sale",
         "area": 2500,
         "location": "Singapore",
+        "state": "Singapore",
         "facilities": [
             "Private Pool",
             "Spa",
@@ -138,7 +147,8 @@
         "baths": 4,
         "kitchen": 1,
         "livingRooms": 1,
-        "views": ["Ocean", "Garden"]
+        "views": ["Ocean", "Garden"],
+        "locationImage" : "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2luZ2Fwb3JlJTIwc2t5bGluZXxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "propertyImages": [
@@ -156,6 +166,7 @@
         "status": "sale",
         "area": 1800,
         "location": "Singapore",
+        "state": "Singapore",
         "facilities": [
             "Private Pool",
             "Spa",
@@ -166,7 +177,8 @@
         "baths": 3,
         "kitchen": 1,
         "livingRooms": 1,
-        "views": ["Ocean", "Beach"]
+        "views": ["Ocean", "Beach"],
+        "locationImage" : "https://images.unsplash.com/photo-1496939376851-89342e90adcd?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8c2luZ2Fwb3JlJTIwc2t5bGluZXxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "propertyImages": [
@@ -184,6 +196,7 @@
         "status": "sale",
         "area": 25000,
         "location": "Dubai, UAE",
+        "state": "Dubai",
         "facilities": [
             "Private Beach",
             "Spa",
@@ -195,7 +208,8 @@
         "baths": 8,
         "kitchen": 2,
         "livingRooms": 5,
-        "views": ["Ocean", "Beach"]
+        "views": ["Ocean", "Beach"],
+        "locationImage": "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZHViYWl8ZW58MHx8MHx8fDA%3D"
     },
     {
         "propertyImages": [
@@ -213,6 +227,7 @@
         "status": "rent",
         "area": 20000,
         "location": "Miami, Florida, USA",
+        "state": "Florida",
         "facilities": [
             "Private Beach",
             "Spa",
@@ -224,7 +239,8 @@
         "baths": 6,
         "kitchen": 2,
         "livingRooms": 4,
-        "views": ["Ocean", "Beach"]
+        "views": ["Ocean", "Beach"],
+        "locationImage" : "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb3JpZGElMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "propertyImages": [
@@ -242,6 +258,7 @@
         "status": "sale",
         "area": 6000,
         "location": "Miami, Florida, USA",
+        "state": "Florida",
         "facilities": [
             "Private Beach",
             "Infinity Pool",
@@ -252,7 +269,8 @@
         "baths": 5,
         "kitchen": 1,
         "livingRooms": 3,
-        "views": ["Ocean", "Beach"]
+        "views": ["Ocean", "Beach"],
+        "locationImage" : "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb3JpZGElMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "propertyImages": [
@@ -270,6 +288,7 @@
         "status": "rent",
         "area": 5000,
         "location": "Los Angeles, California, USA",
+        "state": "California",
         "facilities": [
             "Infinity Pool",
             "Home Theater",
@@ -281,7 +300,8 @@
         "baths": 4,
         "kitchen": 1,
         "livingRooms": 2,
-        "views": ["Mountain", "City"]
+        "views": ["Mountain", "City"],
+        "locationImage" : "https://images.unsplash.com/photo-1611728337177-89dfbbdc7a3a?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9zJTIwYW5nZWxlcyUyMHNreWxpbmV8ZW58MHx8MHx8fDA%3D"
     },
     {
         "propertyImages": [
@@ -299,6 +319,7 @@
         "status": "rent",
         "area": 15000,
         "location": "Miami, Florida, USA",
+        "state": "Florida",
         "facilities": [
             "Home Theater",
             "Indoor Pool",
@@ -310,7 +331,8 @@
         "baths": 8,
         "kitchen": 2,
         "livingRooms": 5,
-        "views": ["Garden", "City"]
+        "views": ["Garden", "City"],
+        "locationImage" : "https://images.unsplash.com/photo-1605723517503-3cadb5818a0c?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZsb3JpZGElMjBiZWFjaHxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
         "propertyImages": [
@@ -328,6 +350,7 @@
         "status": "sale",
         "area": 12000,
         "location": "Los Angeles, California, USA",
+        "state": "California",
         "facilities": [
             "Home Theater",
             "Indoor Pool",
@@ -339,6 +362,7 @@
         "baths": 6,
         "kitchen": 2,
         "livingRooms": 4,
-        "views": ["Garden", "Mountain"]
+        "views": ["Garden", "Mountain"],
+        "locationImage" : "https://images.unsplash.com/photo-1611728337177-89dfbbdc7a3a?w=1400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bG9zJTIwYW5nZWxlcyUyMHNreWxpbmV8ZW58MHx8MHx8fDA%3D"
     }
 ]

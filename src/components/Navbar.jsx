@@ -1,7 +1,8 @@
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
-import toast from 'react-hot-toast'
+import toast from 'react-hot-toast';
+import userpng from "/assets/userpng.png";
 
 const Navbar = () => {
   const { user, logOut, loader } = useContext(AuthContext);
@@ -82,9 +83,9 @@ setTimeout(() => {
       <div className="navbar-end">
         {user ? (
           <>
-            <div className="avatar mr-5">
+            <div className="avatar mr-5 tooltip tooltip-bottom" data-tip={user?.displayName || ""}>
               <div className="w-10 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-                <img src={user.photoURL} />
+                <img src={user?.photoURL || userpng}/>
               </div>
             </div>
             <a onClick={handleSignOut} className="btn btn-sm bg-gray-200">
