@@ -13,12 +13,15 @@ const SingleProperty = ({ properties }) => {
         <h2 className="card-title">{estateTitle}</h2>
         <div className='text-gray-500 font-medium'>
           <p>Property Type: {segmentName}</p>
-          <p>For {status}</p>
+          <p>For <span className='text-red-600 font-bold'>{status}</span></p>
           <div className='flex justify-between items-center'>
-            <div className='flex items-center font-bold'>
-              <BsCurrencyDollar/>
+          <div className="flex items-center font-bold text-green-600">
+          <BsCurrencyDollar/>
+            {
+              status === 'rent' ? <p> {price} /month</p> :
               <p>{price}</p>
-            </div>
+            }
+          </div>
             <div className='flex gap-1 items-center'>
               <FaLocationDot/>
               <p>{location}</p>

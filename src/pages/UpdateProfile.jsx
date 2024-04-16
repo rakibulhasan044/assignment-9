@@ -1,23 +1,31 @@
 import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import toast from "react-hot-toast";
+import { useNavigate } from "react-router-dom";
 
 const UpdateProfile = () => {
-  const { profileUpdate } = useContext(AuthContext);
+  const { profileUpdate, user, setUser } = useContext(AuthContext);
+  const navigate = useNavigate();
+
 
   const handleUpdate = (e) => {
-    //e.preventDefault();
+    e.preventDefault();
     const name = e.target.name.value;
     const photourl = e.target.photourl.value;
     profileUpdate(name, photourl)
-      .then(toast.success("profile updated"))
+      .then(() => {
+        setUser({...user, displplayName: name, photoURL: photourl})
+        toast.success("profile updated")
+        navigate('/')
+      })
       .catch((error) => {
         console.log(error.message);
         toast.error(error.message);
       });
   };
+
   return (
-    <div>
+    <div className="min-h-[calc(100vh-160px)]">
       <p className="text-center text-xl text-green-400 font-semibold mt-10">
         Update your profile information
       </p>

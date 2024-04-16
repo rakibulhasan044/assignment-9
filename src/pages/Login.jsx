@@ -27,7 +27,8 @@ const Login = () => {
       });
   };
   return (
-    <div>
+    <div className="min-h-[calc(100vh-116px)] flex flex-col py-10 md:py-20">
+      <div>
       <form
         onSubmit={handleLogin}
         className="card-body md:w-3/4 lg:w-2/4 mx-auto"
@@ -84,6 +85,7 @@ const Login = () => {
             Register here
           </Link>
         </p>
+      </div>
       </div>
     </div>
   );

@@ -30,7 +30,7 @@ const Register = () => {
 
     }
   return (
-    <div>
+    <div className=" min-h-[calc(100vh-136px)] md:min-h-[calc(100vh-116px)]">
       <form 
       onSubmit={handleRegister}
       className="card-body md:w-3/4 lg:w-2/4 mx-auto">

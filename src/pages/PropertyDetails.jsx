@@ -52,20 +52,23 @@ const PropertyDetails = () => {
       </figure>
       <div className="card-body">
         <h2 className="card-title">{estateTitle}</h2>
+        <p className="text-gray-500 font-semibold">Property type: {segmentName}</p>
         <div className="flex gap-14 text-gray-500">
-          <div className="flex items-center font-bold">
+          <div className="flex items-center font-bold text-green-600">
           <FaDollarSign/>
-            <p>{price}</p>
+            {
+              status === 'rent' ? <p> {price} /month</p> :
+              <p>{price}</p>
+            }
           </div>
           <div className="flex items-center font-bold gap-1">
             <FaLocationDot/>
             <p>Location: {location}</p>
           </div>
         </div>
-        <p className="text-gray-500 font-semibold">Property type: {segmentName}</p>
         <div className="flex text-gray-500 gap-10 md:gap-36 font-bold">
-            <div>For {status}</div>
-            <div>Area: {area}</div>
+            <div>For <span className="text-red-600">{status}</span></div>
+            <div>Area: {area} sqrft</div>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 md:w-3/4 lg:w-3/5 text-gray-500 font-semibold">
             <p>Bedrooms: {bedrooms}</p>
@@ -83,7 +86,7 @@ const PropertyDetails = () => {
         </div>
         <div>
             <p className="text-gray-500">View:</p>
-            <ul className="flex gap-2 md:gap-10 flex-col md:flex-row list-disc list-inside text-gray-500">
+            <ul className="flex gap-10 list-disc list-inside text-gray-500">
             {
                 views.map((p, index) => <li key={index}>{p}</li>)
             }
