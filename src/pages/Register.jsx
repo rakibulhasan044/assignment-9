@@ -3,37 +3,37 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
-import toast from 'react-hot-toast'
+import toast from "react-hot-toast";
 const Register = () => {
+  const { createUser, user, setUser } = useContext(AuthContext);
+  const location = useLocation();
+  const navigate = useNavigate();
+  const [show, setShow] = useState(false);
+  const handleRegister = (e) => {
+    e.preventDefault();
+    const name = e.target.name.value;
+    const email = e.target.email.value;
+    const photourl = e.target.photourl.value;
+    const password = e.target.password.value;
 
-    const {createUser} = useContext(AuthContext);
-    const location = useLocation();
-    const navigate = useNavigate();
-    const [show, setShow] = useState(false);
-    const handleRegister = (e) => {
-        e.preventDefault();
-        const name = e.target.name.value;
-        const email = e.target.email.value;
-        const photourl = e.target.photourl.value;
-        const password = e.target.password.value;
-        console.log(name, email, photourl, password)
-
-        createUser(email, password)
-        .then(result => {
-            console.log(result.user);
-            navigate(location?.state ? location.state : '/')
-            toast.success("SuccessFully registered")
-        })
-        .catch(error => {
-            toast.error(error.message)
-        })
-
-    }
+    createUser(email, password)
+      .then((result) => {
+        console.log(result.user);
+        navigate(location?.state ? location.state : "/");
+        toast.success("SuccessFully registered");
+        setUser({ ...user, displayName: name, photoURL: photourl });
+        localStorage.setItem("authToken", result.user.token);
+      })
+      .catch((error) => {
+        toast.error(error.message);
+      });
+  };
   return (
     <div className=" min-h-[calc(100vh-136px)] md:min-h-[calc(100vh-116px)]">
-      <form 
-      onSubmit={handleRegister}
-      className="card-body md:w-3/4 lg:w-2/4 mx-auto">
+      <form
+        onSubmit={handleRegister}
+        className="card-body md:w-3/4 lg:w-2/4 mx-auto"
+      >
         <div className="form-control">
           <label className="label">
             <span className="label-text">Name</span>
@@ -74,18 +74,18 @@ const Register = () => {
             <span className="label-text">Password</span>
           </label>
           <input
-            type={show? "text" : "password"}
+            type={show ? "text" : "password"}
             placeholder="password"
             name="password"
             className="input input-bordered"
             required
           />
           <span
-              className="absolute top-[52px] right-[10%]"
-              onClick={() => setShow(!show)}
-            >
-              {show ? <FaEye /> : <FaEyeSlash />}
-            </span>
+            className="absolute top-[52px] right-[10%]"
+            onClick={() => setShow(!show)}
+          >
+            {show ? <FaEye /> : <FaEyeSlash />}
+          </span>
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">
               Forgot password?

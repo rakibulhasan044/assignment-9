@@ -31,7 +31,7 @@ const PropertyDetails = () => {
     views
   } = property;
   return (
-    <div className="card bg-base-100 shadow-xl mt-5 animate__animated animate__backInLeft">
+    <div className="card bg-base-100 shadow-xl my-5 md:my-10 animate__animated animate__backInLeft">
       <figure className="max-h-[600px] p-4">
         <Swiper 
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow]}

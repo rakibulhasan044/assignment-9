@@ -6,7 +6,6 @@ import Login from "../pages/Login";
 import Register from "../pages/Register";
 import PrivateRoute from "./PrivateRoute";
 import UpdateProfile from "../pages/UpdateProfile";
-import UserProfile from "../pages/UserProfile";
 import Errorpage from "../pages/Errorpage";
 import SingleLocationProperties from "../pages/SingleLocationProperties";
 
@@ -43,14 +42,6 @@ const router = createBrowserRouter([
         element: (
           <PrivateRoute>
             <UpdateProfile />
-          </PrivateRoute>
-        ),
-      },
-      {
-        path: "/userprofile",
-        element: (
-          <PrivateRoute>
-            <UserProfile />
           </PrivateRoute>
         ),
       },

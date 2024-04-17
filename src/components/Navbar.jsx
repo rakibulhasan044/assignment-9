@@ -15,7 +15,7 @@ setTimeout(() => {
           </div>
       );
   }
-}, 3);
+}, 2000);
 
   const handleSignOut = () => {
     logOut()
@@ -38,9 +38,6 @@ setTimeout(() => {
         <>
           <li>
             <NavLink to="/updateprofile">Update Profile</NavLink>
-          </li>
-          <li>
-            <NavLink to="/userprofile">User Profile</NavLink>
           </li>
         </>
       ) : (
