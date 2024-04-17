@@ -8,6 +8,7 @@ import PrivateRoute from "./PrivateRoute";
 import UpdateProfile from "../pages/UpdateProfile";
 import Errorpage from "../pages/Errorpage";
 import SingleLocationProperties from "../pages/SingleLocationProperties";
+import ContactUs from "../pages/ContactUs";
 
 const router = createBrowserRouter([
   {
@@ -47,9 +48,17 @@ const router = createBrowserRouter([
       },
       {
         path: "/locationprop/:state",
-        element:<SingleLocationProperties/>,
+        element: (
+          <PrivateRoute>
+            <SingleLocationProperties />
+          </PrivateRoute>
+        ),
         loader: () => fetch("/properties.json"),
-      }
+      },
+      {
+        path: "/contactus",
+        element: <ContactUs />,
+      },
     ],
   },
 ]);

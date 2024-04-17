@@ -43,6 +43,9 @@ setTimeout(() => {
       ) : (
         ""
       )}
+      <li>
+        <NavLink to="/contactus">Contact Us</NavLink>
+      </li>
     </>
   );
   return (
