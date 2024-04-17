@@ -2,6 +2,7 @@ import { useContext } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
+import PageTitle from "./PageTitle";
 
 const UpdateProfile = () => {
   const { profileUpdate, user, setUser } = useContext(AuthContext);
@@ -26,6 +27,7 @@ const UpdateProfile = () => {
 
   return (
     <div className="min-h-[calc(100vh-160px)]">
+      <PageTitle title={"Edit-Profile"}/>
       <p className="text-center text-xl text-green-400 font-semibold mt-10">
         Update your profile information
       </p>

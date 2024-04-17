@@ -4,6 +4,7 @@ import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
+import PageTitle from "./PageTitle";
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -28,6 +29,7 @@ const Login = () => {
   };
   return (
     <div className="min-h-[calc(100vh-116px)] flex flex-col py-10 md:py-20">
+      <PageTitle title={"Sing In"}/>
       <div>
       <form
         onSubmit={handleLogin}

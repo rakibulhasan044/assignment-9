@@ -4,6 +4,7 @@ import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from "react-hot-toast";
+import PageTitle from "./PageTitle";
 const Register = () => {
   const { createUser, user, setUser } = useContext(AuthContext);
   const location = useLocation();
@@ -47,7 +48,8 @@ const Register = () => {
       });
   };
   return (
-    <div className=" min-h-[calc(100vh-136px)] md:min-h-[calc(100vh-116px)]">
+    <div className="min-h-[calc(100vh-136px)] md:min-h-[calc(100vh-116px)]">
+      <PageTitle title={"New Registration"}/>
       <form
         onSubmit={handleRegister}
         className="card-body md:w-3/4 lg:w-2/4 mx-auto"

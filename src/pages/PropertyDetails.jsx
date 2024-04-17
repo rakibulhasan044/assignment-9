@@ -7,6 +7,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import { FaLocationDot } from "react-icons/fa6";
 import { FaDollarSign } from "react-icons/fa";
+import PageTitle from "./PageTitle";
 
 
 const PropertyDetails = () => {
@@ -32,6 +33,7 @@ const PropertyDetails = () => {
   } = property;
   return (
     <div className="card bg-base-100 shadow-xl my-5 md:my-10 animate__animated animate__backInLeft">
+      <PageTitle title={"Property details"}/>
       <figure className="max-h-[600px] p-4">
         <Swiper 
         modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay, EffectCoverflow]}
