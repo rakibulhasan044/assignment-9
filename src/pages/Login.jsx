@@ -9,7 +9,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 const Login = () => {
-  const { signIn } = useContext(AuthContext);
+  const { signIn, googleLogin, githubLogin, user, setUser } = useContext(AuthContext);
   const [show, setShow] = useState(false)
   const location = useLocation();
   const navigate = useNavigate();
@@ -30,6 +30,33 @@ const Login = () => {
       });
   };
 
+  const handleGoogleLogin = () => {
+    googleLogin()
+    .then(result => {
+      console.log(result.user);
+      toast.success('Login Successfully')
+      setUser({...user, displplayName: result.user?.displayName, photoURL: result.user?.photoURL})
+      console.log(result.user?.photoURL);
+    })
+    .catch((error) => {
+      console.log(error.message);
+      toast.error(error.message)
+    });
+  }
+
+  const handleGithubLogin = () => {
+    githubLogin()
+    .then(result => {
+      console.log(result.user);
+      toast.success('Login Successfully')
+      setUser({...user, displplayName: result.user?.displayName, photoURL: result.user?.photoURL})
+      console.log(result.user?.photoURL);
+    })
+    .catch((error) => {
+      console.log(error.message);
+      toast.error(error.message)
+    });
+  }
   useEffect(() => {
     AOS.init();
   }, []);
@@ -85,8 +112,8 @@ const Login = () => {
       <div className="text-center">
         <h1 className="text-xl font-bold">Or login With</h1>
         <ul className="flex gap-10 items-center justify-center">
-          <li>Google</li>
-          <li>Github</li>
+          <li onClick={handleGoogleLogin}>Google</li>
+          <li onClick={handleGithubLogin}>Github</li>
         </ul>
         <p>
           Do not have an account?{" "}
