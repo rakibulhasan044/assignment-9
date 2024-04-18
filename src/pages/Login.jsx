@@ -35,7 +35,7 @@ const Login = () => {
     .then(result => {
       console.log(result.user);
       toast.success('Login Successfully')
-      setUser({...user, displplayName: result.user?.displayName, photoURL: result.user?.photoURL})
+      setUser({...user, displayName: result.user?.displayName, photoURL: result.user?.photoURL})
       console.log(result.user?.photoURL);
     })
     .catch((error) => {
@@ -49,7 +49,7 @@ const Login = () => {
     .then(result => {
       console.log(result.user);
       toast.success('Login Successfully')
-      setUser({...user, displplayName: result.user?.displayName, photoURL: result.user?.photoURL})
+      setUser({...user, displayName: result.user?.displayName, photoURL: result.user?.photoURL})
       console.log(result.user?.photoURL);
     })
     .catch((error) => {
