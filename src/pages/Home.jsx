@@ -11,6 +11,7 @@ const Home = () => {
   useEffect(() => {
     AOS.init();
   },[])
+  
   return (
     <div className="p-4" data-aos="fade-left">
       <PageTitle title="Home" />

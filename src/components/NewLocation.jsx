@@ -24,9 +24,9 @@ const NewLocation = () => {
   }, []);
 
   return (
-    <div>
-      <h2>Unique Locations:</h2>
-      <ul className="grid grid-cols-1 md:grid-cols-2 gap-2">
+    <div className="mt-10">
+      <h2 className="text-3xl font-bold text-center py-5">Top Popular Destination</h2>
+      <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {cities.map(({ property }, index) => (
           <li key={index}>
             <Link to={`/locationprop/${property.state}`} className={`relative animate__animated animate__backInLeft`} >

@@ -14,11 +14,11 @@ const SingleLocationProperties = () => {
   }, []);
 
   return (
-    <div className="lg:min-h-[calc(100vh-116px)]
+    <div className="lg:min-h-[calc(100vh-116px)] mt-5
     " data-aos="fade-left">
       <PageTitle title={"Properties-by-location"}/>
       <div className="">
-        <h2 className="text-3xl font-semibold">Choose your dream home</h2>
+        <h2 className="text-xl font-semibold text-center">Here is Our top properties of {state}</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {propertiesByLocation.map((property) => (
             <SingleProperty
