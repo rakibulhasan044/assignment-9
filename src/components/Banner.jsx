@@ -36,7 +36,7 @@ const Banner = () => {
           <a href="#slide1" className="btn btn-circle btn-sm md:btn-md">
             ❮
           </a>
-          <p className=" text-xl md:text-3xl lg:text-5xl font-semibold text-gray-100 text-center">Find the most morden and comfy property in NewHome</p>
+          <p className=" text-xl md:text-3xl lg:text-5xl font-semibold text-gray-100 text-center">Find the most morden and comfy property in NewHome.</p>
           <a href="#slide3" className="btn btn-circle btn-sm md:btn-md">
             ❯
           </a>
