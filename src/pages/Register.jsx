@@ -1,10 +1,14 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from "react-hot-toast";
 import PageTitle from "./PageTitle";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+
 const Register = () => {
   const { createUser, user, setUser } = useContext(AuthContext);
   const location = useLocation();
@@ -47,8 +51,13 @@ const Register = () => {
         toast.error(error.message);
       });
   };
+
+  useEffect(() => {
+    AOS.init();
+  },[])
+
   return (
-    <div className="min-h-[calc(100vh-136px)] md:min-h-[calc(100vh-116px)]">
+    <div className="min-h-[calc(100vh-136px)] md:min-h-[calc(100vh-116px)]" data-aos="flip-up">
       <PageTitle title={"New Registration"}/>
       <form
         onSubmit={handleRegister}

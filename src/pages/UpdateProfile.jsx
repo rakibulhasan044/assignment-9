@@ -1,13 +1,14 @@
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { AuthContext } from "../providers/AuthProviders";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import PageTitle from "./PageTitle";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const UpdateProfile = () => {
   const { profileUpdate, user, setUser } = useContext(AuthContext);
   const navigate = useNavigate();
-
 
   const handleUpdate = (e) => {
     e.preventDefault();
@@ -25,8 +26,11 @@ const UpdateProfile = () => {
       });
   };
 
+  useEffect(() => {
+    AOS.init();
+  },[])
   return (
-    <div className="min-h-[calc(100vh-160px)]">
+    <div className="min-h-[calc(100vh-160px)]" data-aos="flip-up">
       <PageTitle title={"Edit-Profile"}/>
       <p className="text-center text-xl text-green-400 font-semibold mt-10">
         Update your profile information

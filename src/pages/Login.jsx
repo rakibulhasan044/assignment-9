@@ -1,10 +1,12 @@
-import { useContext, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../providers/AuthProviders";
 import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import PageTitle from "./PageTitle";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Login = () => {
   const { signIn } = useContext(AuthContext);
@@ -27,8 +29,13 @@ const Login = () => {
         toast.error(error.message)
       });
   };
+
+  useEffect(() => {
+    AOS.init();
+  }, []);
+
   return (
-    <div className="min-h-[calc(100vh-116px)] flex flex-col py-10 md:py-20">
+    <div className="min-h-[calc(100vh-116px)] flex flex-col py-10 md:py-20" data-aos="flip-up">
       <PageTitle title={"Sing In"}/>
       <div>
       <form
