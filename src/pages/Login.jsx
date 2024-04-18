@@ -5,6 +5,8 @@ import { FaEye } from "react-icons/fa6";
 import { FaEyeSlash } from "react-icons/fa";
 import toast from 'react-hot-toast';
 import PageTitle from "./PageTitle";
+import { FaGoogle } from "react-icons/fa6";
+import { FaGithub } from "react-icons/fa";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -109,11 +111,11 @@ const Login = () => {
         </div>
         <hr className="mt-5" />
       </form>
-      <div className="text-center">
+      <div className="text-center space-y-2">
         <h1 className="text-xl font-bold">Or login With</h1>
         <ul className="flex gap-10 items-center justify-center">
-          <li onClick={handleGoogleLogin}>Google</li>
-          <li onClick={handleGithubLogin}>Github</li>
+          <li onClick={handleGoogleLogin}><FaGoogle size={30}/></li>
+          <li onClick={handleGithubLogin}><FaGithub size={30}/></li>
         </ul>
         <p>
           Do not have an account?{" "}
