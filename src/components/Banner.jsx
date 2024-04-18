@@ -43,7 +43,7 @@ const Banner = () => {
         </div>
         <div className="absolute flex gap-7 md:gap-16 lg:gap-24 items-center text-xl md:text-3xl font-bold bottom-3 md:bottom-12 left-[24%] sm:left-[29%] md:left-[26%] lg:left-[32%]">
           <div>
-            <p className="text-base-200">Experience</p>
+            <p className="text-base-200">Experience.</p>
             <p className="text-green-500">32 years +</p>
           </div>
           <div>
